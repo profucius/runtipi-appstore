@@ -13,6 +13,8 @@ services:
       - ${ROOT_FOLDER_HOST}/media/data/youtube:/youtube 
       - ${APP_DATA_DIR}/data/cache:/cache
     environment:
+      - PUID=
+      - PGID=
       - ES_URL=http://tubearchivist-es:9200
       - REDIS_HOST=tubearchivist-redis
       - HOST_UID=1000
